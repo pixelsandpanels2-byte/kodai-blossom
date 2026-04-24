@@ -45,14 +45,15 @@
             display: flex; align-items: center; justify-content: space-between;
             width: 100%; max-width: 1200px; padding: 0 20px;
         }
-        .nav-left, .nav-right { flex: 1; font-weight: 500; font-size: 0.85rem; text-transform: uppercase; }
-        .nav-right { text-align: right; }
-        .nav-right a {
-            color: #E899B5;
-            text-decoration: none; border: 2px solid #E899B5;
-            padding: 10px 25px; border-radius: 4px; transition: 0.3s;
+        .nav-menu { 
+            display: flex; gap: 30px; font-weight: 500; font-size: 0.85rem; text-transform: uppercase; 
         }
-        .nav-right a:hover { background: #E899B5; color: #fff; }
+        .nav-menu a { 
+            color: #1E1E45; 
+            text-decoration: none; 
+            transition: 0.3s; 
+        }
+        .nav-menu a:hover { color: #E899B5; }
 
         .logo-area img { height: 75px; width: auto; transition: 0.3s; }
 
@@ -173,6 +174,7 @@
 
         /* --- RESPONSIVE --- */
         @media (max-width: 850px) {
+            .nav-menu { display: none; }
             .room-block, .room-block:nth-child(even) {
                 grid-template-columns: 1fr;
                 gap: 30px;
@@ -234,9 +236,13 @@
 
     <nav>
         <div class="nav-container">
-            <div class="nav-left">Kodai Blossom</div>
             <div class="logo-area"><a href="index.html"><img src="logo.png" alt="Kodai Blossom"></a></div>
-            <div class="nav-right"><a href="index.html#enquire">Enquire Now</a></div>
+            <div class="nav-menu">
+                <a href="book-your-stay.html">Book your stay</a>
+                <a href="index.html#amenities">Amenities & Experiences</a>
+                <a href="index.html#nearby">Nearby Places</a>
+                <a href="index.html#contact">Location & Contact</a>
+            </div>
         </div>
     </nav>
 
