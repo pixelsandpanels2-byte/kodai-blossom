@@ -341,6 +341,20 @@
     .attr-content { width: 100%; text-align: left !important; }
 }
 
+
+        /* --- 10. GUEST STORIES (NARROWER & WHITE TEXT) --- */
+        .reviews-section { 
+            padding: 80px 0; 
+            background: linear-gradient(rgba(30, 30, 69, 0.85), rgba(30, 30, 69, 0.85)), url('https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=2070');
+            background-size: cover; background-position: center; background-attachment: fixed;
+            color: #fff; text-align: center;
+        }
+        .reviews-section .section-title { color: #fff; }
+        .testimonial-wrapper { max-width: 600px; margin: 0 auto; height: 180px; position: relative; }
+        .review-card { position: absolute; width: 100%; opacity: 0; transition: 1s; color: #fff; }
+        .review-card.active { opacity: 1; }
+        .review-text { font-size: 1.2rem; font-style: italic; margin-bottom: 15px; }
+
 /* --- HOW TO REACH SECTION --- */
 .reach-section { background: #fff; text-align: center; }
 .reach-intro { max-width: 700px; margin: -30px auto 50px; color: #666; font-size: 0.95rem; }
@@ -411,18 +425,6 @@
     .reach-grid { grid-template-columns: 1fr; }
     .reach-card { padding: 30px; }
 }
-        /* --- 10. GUEST STORIES (NARROWER & WHITE TEXT) --- */
-        .reviews-section { 
-            padding: 80px 0; 
-            background: linear-gradient(rgba(30, 30, 69, 0.85), rgba(30, 30, 69, 0.85)), url('https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=2070');
-            background-size: cover; background-position: center; background-attachment: fixed;
-            color: #fff; text-align: center;
-        }
-        .reviews-section .section-title { color: #fff; }
-        .testimonial-wrapper { max-width: 600px; margin: 0 auto; height: 180px; position: relative; }
-        .review-card { position: absolute; width: 100%; opacity: 0; transition: 1s; color: #fff; }
-        .review-card.active { opacity: 1; }
-        .review-text { font-size: 1.2rem; font-style: italic; margin-bottom: 15px; }
 
         /* --- 11. CONTACT --- */
         .contact-grid { display: grid; grid-template-columns: 1fr 1.2fr; gap: 60px; }
@@ -712,7 +714,8 @@
 </section>
 
 <section id="nearby" class="section-padding attractions-section">
-        
+        <div class="container">
+        <h2 class="section-title reveal">Places to Visit</h2>
         <div class="attractions-container reveal">
             <div class="attraction-node">
                 <div class="attr-content">
@@ -765,6 +768,22 @@
     </div>
 </section>
 
+    <section class="reviews-section">
+        <div class="container section-padding">
+            <h2 class="section-title">Guest Stories</h2>
+            <div class="testimonial-wrapper">
+                <div class="review-card active">
+                    <p class="review-text">"The most comfortable homestay in Kodai. Amazing family atmosphere!"</p>
+                    <span>— Rahul Varma</span>
+                </div>
+                <div class="review-card">
+                    <p class="review-text">"Waking up to the mist and a hot cup of tea was incredible."</p>
+                    <span>— Priya Sundar</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
 <section class="section-padding reach-section">
     <div class="container">
         <h2 class="section-title reveal">How to Reach Kodai Blossom</h2>
@@ -801,22 +820,6 @@
         </div>
     </div>
 </section>
-	
-    <section class="reviews-section">
-        <div class="container section-padding">
-            <h2 class="section-title">Guest Stories</h2>
-            <div class="testimonial-wrapper">
-                <div class="review-card active">
-                    <p class="review-text">"The most comfortable homestay in Kodai. Amazing family atmosphere!"</p>
-                    <span>— Rahul Varma</span>
-                </div>
-                <div class="review-card">
-                    <p class="review-text">"Waking up to the mist and a hot cup of tea was incredible."</p>
-                    <span>— Priya Sundar</span>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <section id="contact" class="section-padding container">
         <div class="contact-grid">
