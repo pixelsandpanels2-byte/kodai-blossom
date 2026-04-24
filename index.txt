@@ -85,14 +85,15 @@
             display: flex; align-items: center; justify-content: space-between;
             width: 100%; max-width: 1200px; padding: 0 20px;
         }
-        .nav-left, .nav-right { flex: 1; font-weight: 500; font-size: 0.85rem; text-transform: uppercase; }
-        .nav-right { text-align: right; }
-        .nav-right a { 
-            color: #E899B5; 
-            text-decoration: none; border: 2px solid #E899B5; 
-            padding: 10px 25px; border-radius: 4px; transition: 0.3s; 
+        .nav-menu { 
+            display: flex; gap: 30px; font-weight: 500; font-size: 0.85rem; text-transform: uppercase; 
         }
-        .nav-right a:hover { background: #E899B5; color: #fff; }
+        .nav-menu a { 
+            color: #1E1E45; 
+            text-decoration: none; 
+            transition: 0.3s; 
+        }
+        .nav-menu a:hover { color: #E899B5; }
         
         .logo-area img { height: 75px; width: auto; transition: 0.3s; }
 
@@ -430,10 +431,48 @@
         input, textarea { width: 100%; padding: 15px; margin-bottom: 15px; border: 1px solid #ddd; border-radius: 5px; }
         .submit-btn { background: #1E1E45; color: #fff; border: none; padding: 18px; width: 100%; cursor: pointer; border-radius: 5px; font-weight: 600; }
 
-        footer { background: #141432; color: #fff; padding: 50px 0; text-align: center; opacity: 0.8; font-size: 0.8rem; }
+        footer { 
+            background: #141432; 
+            color: #fff; 
+            padding: 60px 0 40px; 
+            font-size: 0.9rem; 
+            line-height: 1.6;
+        }
+        .footer-content { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        .footer-description { 
+            text-align: center; 
+            margin-bottom: 40px; 
+            opacity: 0.9; 
+            max-width: 800px; 
+            margin-left: auto; 
+            margin-right: auto;
+        }
+        .footer-links { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); 
+            gap: 20px; 
+            text-align: center; 
+            margin-bottom: 30px;
+        }
+        .footer-links a { 
+            color: #fff; 
+            text-decoration: none; 
+            opacity: 0.8; 
+            transition: opacity 0.3s;
+            display: block;
+            padding: 8px 0;
+        }
+        .footer-links a:hover { opacity: 1; }
+        .footer-copyright { 
+            text-align: center; 
+            opacity: 0.7; 
+            font-size: 0.8rem; 
+            border-top: 1px solid rgba(255,255,255,0.1); 
+            padding-top: 20px;
+        }
 
         @media (max-width: 900px) {
-            .nav-left, .nav-right { display: none; }
+            .nav-menu { display: none; }
             .story-grid, .room-item, .contact-grid { flex-direction: column; }
             .amenities-grid { grid-template-columns: repeat(2, 1fr); }
         }
@@ -450,9 +489,13 @@
 
     <nav>
         <div class="nav-container">
-            <div class="nav-left">Kodai Blossom</div>
             <div class="logo-area"><a href="#"><img src="logo.png" alt="Kodai Blossom"></a></div>
-            <div class="nav-right"><a href="book-your-stay.html">Book Your Stay</a></div>
+            <div class="nav-menu">
+                <a href="book-your-stay.html">Book your stay</a>
+                <a href="#amenities">Amenities & Experiences</a>
+                <a href="#nearby">Nearby Places</a>
+                <a href="#contact">Location & Contact</a>
+            </div>
         </div>
     </nav>
 
@@ -469,7 +512,7 @@
                 <h2 class="story-main-title">Cottage Stay in Kodaikanal</h2>
                 <p>Kodai Blossom is a peaceful cottage homestay in Kodaikanal, located just 2 km from Kodaikanal Lake. Set in a quiet area, it offers easy access to the town while ensuring a calm and relaxing stay.<br><br>
                    Ideal for families and group travelers, our homestay features spacious rooms, common living areas, and a garden space to unwind. With essential amenities and a warm, home-like atmosphere, it’s a perfect choice for a comfortable and budget-friendly stay in Kodaikanal.</p><br>
-                <a href="#enquire" class="book-btn">Get in Touch</a>
+                <a href="book-your-stay.html" class="book-btn">Book Your Stay</a>
             </div>
             <div class="story-visual-col reveal">
                 <div class="story-image-frame"><img src="https://images.unsplash.com/photo-1445019980597-93fa8acb246c?auto=format&fit=crop&q=80&w=1000"></div>
@@ -584,7 +627,7 @@
         </div>
     </section>
 
-<section class="section-padding amenities-section">
+<section id="amenities" class="section-padding amenities-section">
     <div class="container">
         <h2 class="section-title reveal">Amenities</h2>
         <div class="amenities-grid">
@@ -668,9 +711,7 @@
     </div>
 </section>
 
-<section class="section-padding attractions-section">
-    <div class="container">
-        <h2 class="section-title reveal">Places to Visit</h2>
+<section id="nearby" class="section-padding attractions-section">
         
         <div class="attractions-container reveal">
             <div class="attraction-node">
@@ -777,7 +818,7 @@
         </div>
     </section>
 
-    <section id="enquire" class="section-padding container">
+    <section id="contact" class="section-padding container">
         <div class="contact-grid">
             <div class="contact-form reveal">
                 <h2>Plan Your Visit</h2>
@@ -801,7 +842,24 @@
         </div>
     </section>
 
-    <footer><p>© 2026 KODAI BLOSSOM HOME STAY</p></footer>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-description">
+                Kodai Blossom is one of the best options for travelers looking for a cottage homestay in Kodaikanal near the lake. With comfortable rooms, garden space, and easy access to tourist attractions, it is ideal for families, couples, and group stays.
+            </div>
+            <div class="footer-links">
+                <a href="policies.html">Terms & Conditions</a>
+                <a href="policies.html#cancellation">Cancellation Policy</a>
+                <a href="privacy.html#privacy">Privacy Policy</a>
+                <a href="#rooms">Rooms & Suites</a>
+                <a href="#amenities">Amenities</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="footer-copyright">
+                © 2026 Kodai Blossom Home Stay, Kodaikanal. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
 
     <script>
         let cS = 0, cR = 0;
