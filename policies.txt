@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Policies & Terms | Kodai Blossom Home Stay Kodaikanal</title>
+    <meta name="description" content="Review the cancellation policy, guest terms, and privacy guidelines for Kodai Blossom Home Stay. Transparent booking for your Kodaikanal retreat.">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Outfit:wght@300;400&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --navy: #1E1E45;
+            --pink: #E899B5;
+            --light-bg: #F9F9FB;
+            --border: #EEE;
+        }
+
+        body {
+            font-family: 'Outfit', sans-serif;
+            line-height: 1.8;
+            color: var(--navy);
+            margin: 0;
+            background: #fff;
+            font-weight: 300;
+        }
+
+        .container { max-width: 850px; margin: 0 auto; padding: 0 20px; }
+
+        /* --- HEADER --- */
+        .policy-header {
+            padding: 100px 0 60px;
+            background: var(--light-bg);
+            text-align: center;
+        }
+
+        .policy-header h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2.2rem;
+            font-weight: 500;
+            margin-bottom: 15px;
+        }
+
+        .policy-header p {
+            color: #666;
+            font-size: 0.95rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* --- CONTENT SECTIONS --- */
+        .policy-content { padding: 80px 0; }
+
+        .policy-block { margin-bottom: 60px; }
+
+        .policy-block h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin-bottom: 25px;
+            border-left: 4px solid var(--pink);
+            padding-left: 15px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .policy-card {
+            background: var(--light-bg);
+            padding: 30px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .policy-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .policy-list li {
+            padding: 12px 0;
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .policy-list li:last-child { border-bottom: none; }
+
+        .policy-list span.label { font-weight: 500; color: var(--navy); }
+        .policy-list span.value { color: #555; }
+
+        .text-content p {
+            margin-bottom: 20px;
+            font-size: 0.95rem;
+            color: #444;
+        }
+
+        footer {
+            padding: 40px 0;
+            text-align: center;
+            border-top: 1px solid var(--border);
+            font-size: 0.8rem;
+            color: #999;
+        }
+
+        .back-home {
+            display: inline-block;
+            margin-top: 40px;
+            color: var(--pink);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 600px) {
+            .policy-list li { flex-direction: column; }
+            .policy-list span.value { margin-top: 5px; }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="policy-header">
+        <div class="container">
+            <h1>Terms & Policies</h1>
+            <p>Everything you need to know about your stay at Kodai Blossom Home Stay to ensure a comfortable and transparent experience.</p>
+        </div>
+    </header>
+
+    <div class="container policy-content">
+        
+        <section class="policy-block">
+            <h2>Cancellation Policy</h2>
+            <div class="policy-card">
+                <ul class="policy-list">
+                    <li><span class="label">15+ Days Notice</span> <span class="value">Full Refund (less 10% Service Charge)</span></li>
+                    <li><span class="label">5 – 10 Days Notice</span> <span class="value">25% Cancellation Charge</span></li>
+                    <li><span class="label">Less than 5 Days Notice</span> <span class="value">No Refund Provided</span></li>
+                    <li><span class="label">Post Check-in / Early Exit</span> <span class="value">No Refund / Cancellation Possible</span></li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="policy-block">
+            <h2>General House Rules</h2>
+            <div class="policy-card">
+                <ul class="policy-list">
+                    <li><span class="label">Check-in Time</span> <span class="value">10:00 AM onwards</span></li>
+                    <li><span class="label">Check-out Time</span> <span class="value">By 11:00 AM</span></li>
+                    <li><span class="label">Pet Policy</span> <span class="value">Allowed only on prior written approval</span></li>
+                    <li><span class="label">Damages</span> <span class="value">Charges apply based on the extent of damage</span></li>
+                    <li><span class="label">Extra Person</span> <span class="value">₹800 per person</span></li>
+                    <li><span class="label">Extra Bedding</span> <span class="value">₹600 per unit</span></li>
+                    <li><span class="label">Campfire Experience</span> <span class="value">₹2,500 per session</span></li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="policy-block">
+            <h2>Privacy Policy</h2>
+            <div class="text-content">
+                <p>At Kodai Blossom Home Stay, we value the trust you place in us when sharing your personal information. This policy outlines how we collect and protect your data.</p>
+                <p><strong>1. Data Collection:</strong> We collect information provided during the booking process, including your name, contact number, email address, and government-mandated ID details for check-in purposes.</p>
+                <p><strong>2. Usage:</strong> Your information is used strictly for managing your reservation, providing travel assistance, and improving our hospitality services. We do not sell your data to third-party marketers.</p>
+                <p><strong>3. Security:</strong> We implement standard security measures to ensure your personal details are stored safely. Payment information is processed through secure gateways and is not stored on our local servers.</p>
+                <p><strong>4. Local Compliance:</strong> As per Indian hospitality regulations, guest details are shared with local authorities via Form C when required.</p>
+            </div>
+        </section>
+
+        <center><a href="index.html" class="back-home">← Back to Home</a></center>
+    </div>
+
+    <footer>
+        <div class="container">
+            &copy; 2026 Kodai Blossom Home Stay, Kodaikanal. All Rights Reserved.
+        </div>
+    </footer>
+
+</body>
+</html>

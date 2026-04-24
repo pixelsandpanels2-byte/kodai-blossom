@@ -430,45 +430,7 @@
         input, textarea { width: 100%; padding: 15px; margin-bottom: 15px; border: 1px solid #ddd; border-radius: 5px; }
         .submit-btn { background: #1E1E45; color: #fff; border: none; padding: 18px; width: 100%; cursor: pointer; border-radius: 5px; font-weight: 600; }
 
-        footer { 
-            background: #141432; 
-            color: #fff; 
-            padding: 60px 0 40px; 
-            font-size: 0.9rem; 
-            line-height: 1.6;
-        }
-        .footer-content { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
-        .footer-description { 
-            text-align: center; 
-            margin-bottom: 40px; 
-            opacity: 0.9; 
-            max-width: 800px; 
-            margin-left: auto; 
-            margin-right: auto;
-        }
-        .footer-links { 
-            display: grid; 
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); 
-            gap: 20px; 
-            text-align: center; 
-            margin-bottom: 30px;
-        }
-        .footer-links a { 
-            color: #fff; 
-            text-decoration: none; 
-            opacity: 0.8; 
-            transition: opacity 0.3s;
-            display: block;
-            padding: 8px 0;
-        }
-        .footer-links a:hover { opacity: 1; }
-        .footer-copyright { 
-            text-align: center; 
-            opacity: 0.7; 
-            font-size: 0.8rem; 
-            border-top: 1px solid rgba(255,255,255,0.1); 
-            padding-top: 20px;
-        }
+        footer { background: #141432; color: #fff; padding: 50px 0; text-align: center; opacity: 0.8; font-size: 0.8rem; }
 
         @media (max-width: 900px) {
             .nav-left, .nav-right { display: none; }
@@ -839,24 +801,7 @@
         </div>
     </section>
 
-    <footer>
-        <div class="footer-content">
-            <div class="footer-description">
-                Kodai Blossom is one of the best options for travelers looking for a cottage homestay in Kodaikanal near the lake. With comfortable rooms, garden space, and easy access to tourist attractions, it is ideal for families, couples, and group stays.
-            </div>
-            <div class="footer-links">
-                <a href="policies.html">Terms & Conditions</a>
-                <a href="policies.html#cancellation">Cancellation Policy</a>
-                <a href="policies.html#privacy">Privacy Policy</a>
-                <a href="#rooms">Rooms & Suites</a>
-                <a href="#amenities">Amenities</a>
-                <a href="#contact">Contact</a>
-            </div>
-            <div class="footer-copyright">
-                © 2026 Kodai Blossom Home Stay, Kodaikanal. All Rights Reserved.
-            </div>
-        </div>
-    </footer>
+    <footer><p>© 2026 KODAI BLOSSOM HOME STAY</p></footer>
 
     <script>
         let cS = 0, cR = 0;
